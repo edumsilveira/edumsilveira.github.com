@@ -1,0 +1,21 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#top-section, #bottom-section {
+    background-color: #f4f4f4;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#middle-section {
+    background-image: url('img/fundo1.jpg');
+    background-size: 120% 120%; /* Expandida em 20% */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+}
