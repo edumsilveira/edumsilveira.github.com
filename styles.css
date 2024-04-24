@@ -19,3 +19,28 @@ body, html {
     background-repeat: no-repeat;
     height: 70%;
 }
+
+/* Adicionar responsividade */
+@media (max-width: 768px) {
+    #top-section, #bottom-section {
+        height: 10%; /* Menor altura para dispositivos menores */
+    }
+
+    #middle-section {
+        height: 80%;
+    }
+}
+
+/* Efeitos visuais */
+#middle-section {
+    transition: background-size 0.5s ease-in-out;
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
