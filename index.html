@@ -6,6 +6,16 @@
     <title>Página com Três Seções</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+    document.getElementById('middle-section').addEventListener('mouseover', function() {
+        this.style.backgroundSize = '130%';
+    });
+    
+    document.getElementById('middle-section').addEventListener('mouseout', function() {
+        this.style.backgroundSize = '120%';
+    });
+    </script>
+    
 <body>
     <div id="top-section">Topo</div>
     <div id="middle-section"></div>

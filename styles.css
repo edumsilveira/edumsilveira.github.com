@@ -1,24 +1,28 @@
 body, html {
     margin: 0;
     height: 100%;
-    overflow: hidden;
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
 }
 
-#top-section, #bottom-section {
-    background-color: #f4f4f4;
-    height: 15%;
+#top-section, #bottom-section, #middle-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+#top-section {
+    position: relative;
+    z-index: 2;
 }
 
 #middle-section {
     background-image: url('img/fundo1.jpg');
-    background-size: 120% 120%; /* Expandida em 20% */
-    background-position: center;
+    background-size: 120% 120%;
     background-repeat: no-repeat;
-    height: 70%;
-    transition: background-size 0.5s ease-in-out; /* Transição suave do background */
+    margin-top: -50px; /* Sobrepondo a seção anterior */
+    opacity: 0.9;
 }
 
 /* Adicionar responsividade */
@@ -41,3 +45,4 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
