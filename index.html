@@ -89,15 +89,7 @@
 
   function gameLoop() {
     if (keysPressed['w'] && player.y > player.height + 10 ) {
-	  
-      <!-- if (player.y > canvas.height / 2) {
-        player.y -= roadSpeed * playerVertSpeed;
-        roadOffset += roadSpeed;
-        if (roadOffset >= 20) roadOffset = 0;
-	  }
-	  else{
-		roadOffset += roadSpeed;
-	  } -->
+	    player.y -= roadSpeed * playerVertSpeed;
     }
 	if (keysPressed['s'] && player.y < canvas.height - player.height - 10) {
       player.y += roadSpeed * playerVertSpeed;
